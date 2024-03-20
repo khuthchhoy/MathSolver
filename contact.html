@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="./manifest.json">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="css/simplecal.css">
+    <link rel="stylesheet" href="css/animista.css">
+    <link href="katex/katex.min.css" rel="stylesheet">
+    
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: var(--apppink);;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-button:single-button {
+            display: block;
+            background-color: var(--appwhite);
+            height: 20px;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:decrement {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(images/uparrow.png);
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(images/downarrow.png);
+            background-repeat: no-repeat;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--apppink);;
+        }
+        .main::-webkit-scrollbar {
+            display: none;
+        }
+
+        @font-face {
+            font-family: mainfont;
+            src: url(../fonts/Product_Sans_Regular.ttf) format('truetype');
+        }
+        body {
+            background-color: white;
+            font-family:mainfont;
+            color: rgb(255, 136, 231);
+            overflow-x: hidden;
+            height:100vh;
+        }
+        .topp{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            
+        }
+        .topp img{
+            width: 200px;
+            height: 200px;
+        }
+        .topp h1{
+            padding: 80px 40px 40px 20px;
+        }
+        @media(max-width: 500px){
+            .topp img{
+                width: 100px;
+                height: 100px;
+            }
+            .topp h1{
+                font-size: 20px;
+                padding: 30px 40px 40px 20px;
+        
+            }
+        }
+        @media screen and (max-width: 344px) {
+            .darkmode-toggle{
+                right: 15px !important;
+            }
+            .darkmode-layer--button{
+                right: 15px !important;
+            }
+            .sidenav{
+                width: 100%;
+            }
+        }
+        .list_menu_items {
+            padding-left: 1.875rem;
+        }
+        .main {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+        .sidenav li > a {
+            display: inline-block;
+        }
+        body img {
+        filter: invert(0%);
+        } 
+
+        #home {
+        position: relative;
+        display: block;
+        z-index: 10;
+        float: right;
+        margin-right:2rem;
+        margin-top:2rem;
+        padding: 0rem 0.625rem 0.125rem 0.625rem;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        border-color: white;
+        color: var(--apppink);
+        background-color: var(--appblack);
+        outline: none;
+        transition-duration: 0.4s;
+        font-size:1.5rem;
+        }
+        #home:hover {
+        background-color: rgba(255, 244, 253, 0.993);
+        font-weight: bolder;
+        }
+
+        .formmain{
+            display: flex;            
+            flex-direction: column;
+        }
+        .formelem1{
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .formelem2{
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            padding: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .formelem3{
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-top:10px;
+            margin-bottom:10px;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .formelem4{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;        
+        }
+        .formelem5{
+            background-color: rgb(22, 189, 0);
+            color: white;
+            width: 300px;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+        .formelem5:hover{
+            background-color: rgb(223, 238, 221);
+            color:green;
+            border: 2px solid green;
+        }
+
+        body{
+            background-color: #232A36;
+        }
+        .card {          
+            margin: 3px;
+            padding: 20px 30px;
+            color: #395177;
+            margin-top:50px;
+            background: rgb(25, 30, 36);
+            border: 2px solid;
+            box-shadow: 0 0 33px -10px rgb(5, 5, 5);
+        }
+        .img-responsive {
+            height: auto;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+  
+
+    </style>
+</head>
+<body>
+
+        <nav id="navbar-main" style="z-index:30;">
+            <ul id="slide-out" class="sidenav ulstyle" style="background-color: var(--appblack);">
+                <div class="text-center mt-4 justify-content-center">
+                        <div class="col">
+                            <img src="images/makesmatheasylogo.png" style="width: 48%;">
+                        </div>
+                        <div class="col">
+                            <h4>Makes Math Easy</h4>
+                        </div>
+                </div>
+                <li class="list_menu_items"><a id="homeoption" style="cursor: pointer;font-size: 1rem;text-decoration: none;" href="index.html">Home</a></li>
+                <li class="list_menu_items"><a href="about.html" id="aboutbutton" style="cursor: pointer;font-size: 1rem;">About</a></li>                                                    
+                    
+                <li style=" color:var(--appwhite); position:relative;" class="icons p-1">
+                    <a href="https://www.instagram.com/makesmatheasy" target="_blank" class="p-0"><i class="fab fa-instagram icon fa-2x"></i></a>
+                    <a href="mailto:makesmatheasy@gmail.com" target="_blank" class="p-0" ><i class="fas fa-envelope icon fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/rajinderpalsingh2001/" target="_blank"class="p-0" ><i class="fab fa-linkedin icon fa-2x"></i></a>
+                    <a href="https://discord.com/channels/811724426965811210/818825491065995264" target="_blank" class="p-0"><i class="fab fa-discord icon fa-2x"></i></a>
+                    <a href="https://github.com/sairish2001/makesmatheasy" target="_blank" class="p-0"><i class="fab fa-github icon fa-2x"></i></a>
+                </li>
+                    
+                <li style="color:var(--appwhite);font-size: 0.7rem; bottom: 0rem; position:relative;" id="copyright" class="text-center"> Copyright © 2021 Makes
+                                Math Easy. All Rights Reserved.</li>
+                    
+            </ul>
+        </nav>
+
+<div id="main" style="z-index:31;">
+    <div class="form-group " style="margin-top:1rem">
+            <span style="position:fixed;z-index:100" id='slidebutton' data-target="slide-out"
+                  class="sidenav-trigger"><img class="material-icons" src="icons/list.svg"
+                                               style="cursor:pointer; height: 2.5rem;padding-left: 0.625rem; filter: invert(100%);"></span>
+        <br>
+            <div class="container">
+                <div class="topp">
+                    <img class="logo" src="images/makesmatheasylogo.png" />
+                    <h1>Makes Math Easy</h1>
+                </div>
+                                          
+                    <!-- <iframe id="contactform"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe9iLIoN47Puox50aziGG-f1qZMmYm3tiF861QPZyBcZU-kSg/viewform?embedded=true"
+                            width="100%" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading…
+                    </iframe> -->
+                <div class="card">
+                    <h3 style="text-align: center;margin-bottom: 20px;">Get in touch with us</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-12 col-sm-12" >
+                           <img src="images/contact_us.png" class="img-responsive">
+                        </div>
+                        <div class="col-lg-6 col-12 col-sm-12">
+                            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe9iLIoN47Puox50aziGG-f1qZMmYm3tiF861QPZyBcZU-kSg/formResponse?embedded=true" class="formmain">
+                                
+                                <label for="name" style="text-align: left;">Name</label>
+                                <input type="text" id="name" name="entry.2005620554" class="formelem2" placeholder="Your Name">
+                                <label for="name" style="text-align: left;">Message</label>
+                                <textarea name="entry.1065046570" class="formelem3" placeholder="Message..." cols="30" rows="7"></textarea>
+                                <br><br>
+                                <label for="elemId" style="text-align: left;" class="formelem3">
+                                    <span>Are you Enjoying Makes Maths Easy ?</span>
+                                    <br>
+                                    <span>YES : <input type="radio" name="entry.1166974658" class="formelem1" id="elemId"></span>                            
+                                    <br>
+                                    <span>NO : <input type="radio" name="entry.1166974658" class="formelem1" id="elemId"></span>                            
+                                    <br>
+                                    <span>MAY BE : <input type="radio" name="entry.1166974658" class="formelem1" id="elemId"></span>
+                                </label>
+                                <br>
+                                <button type="submit" class="formelem5">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>  
+                </div>
+                                 
+                
+            </div>
+    </div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        $('.sidenav').sidenav();
+        });
+    </script>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</body>
+</html>
